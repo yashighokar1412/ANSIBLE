@@ -22,7 +22,7 @@ pipeline {
         stage('ansible provision') {
           steps {
              // To suppress warnings when you execute the playbook    
-             sh "pip install --upgrade requests==2.20.1"
+             sh "pip install --upgrade requests==2.49.0"
              ansiblePlaybook playbook: 'ec2.yaml' 
             }
         }
